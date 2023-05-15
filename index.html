@@ -5,130 +5,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper slideshower -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
     <title>Document</title>
-    <!-- Custom CSS File -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Cdn Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- header section starts -->
 
+    <section class="header">
 
-    <section class="home">
-
-        <div class="header">
-            <div class="logo">
-                <img src="images\images/logo.png" alt="">
-            </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Account</a>
-                <a href="#" class="fas fa-shopping-bag"></a>
-            </div>
-            <div class="icons">
-                <i class="fas fa-bars"></i>
-            </div>
+        <div class="flex">
+            <a href="#home" class="logo">Hotels And Resorts</a>
+            <a href="#availability" class="btn">check availability</a>
+            <div id="menu-btn" class="fas fa-bars"></div>
         </div>
-        <div class="boxx">
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#reservation">reservation</a>
+            <a href="#gallery">gallery</a>
+            <a href="#contact">contact</a>
+            <a href="#reviews">reviews</a>
+        </nav>
+
+    </section>
+
+    <!-- header section ends -->
+
+
+    <!-- home section starts here -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="box swiper-slide">
+                    <img src="images/home-img-1.jpg" alt="">
+                    <div class="flex">
+                        <h3>luxurious rooms</h3>
+                        <a href="#availability" class="btn">check availability</a>
+                    </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="images/home-img-2.jpg" alt="">
+                    <div class="flex">
+                        <h3>foods and drinks</h3>
+                        <a href="#reservation" class="btn">make a reservation</a>
+                    </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="images/home-img-3.jpg" alt="">
+                    <div class="flex">
+                        <h3>luxurious halls</h3>
+                        <a href="#contact" class="btn">contact us</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends here -->
+
+
+
+    <!-- availability section starts here -->
+
+
+
+    <section class="availability" id="availability">
+
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>check in <span>*</span></p>
+                    <input type="date" name="check_in" class="input" required>
+                </div>
+                <div class="box">
+                    <p>check out <span>*</span></p>
+                    <input type="date" name="check_out" class="input" required>
+                </div>
+                <div class="box">
+                    <p>adults <span>*</span></p>
+                    <select name="adults" class="input" required>
+                        <option value="1">1 adult</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                        <option value="4">4 adults</option>
+                        <option value="5">5 adults</option>
+                        <option value="6">6 adults</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>childs <span>*</span></p>
+                    <select name="childs" class="input" required>
+                        <option value="-">0 child</option>
+                        <option value="1">1 child</option>
+                        <option value="2">2 childs</option>
+                        <option value="3">3 childs</option>
+                        <option value="4">4 childs</option>
+                        <option value="5">5 childs</option>
+                        <option value="6">6 childs</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>rooms <span>*</span></p>
+                    <select name="rooms" class="input" required>
+                        <option value="1">1 room</option>
+                        <option value="2">2 rooms</option>
+                        <option value="3">3 rooms</option>
+                        <option value="4">4 rooms</option>
+                        <option value="5">5 rooms</option>
+                        <option value="6">6 rooms</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="check availability" name="check" class="btn">
+        </form>
+
+    </section>
+
+    <!-- availability section endss here -->
+
+
+
+    <!-- About section starts here -->
+
+    <section class="about" id="about">
+
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img-1.jpg" alt="">
+            </div>
             <div class="content">
-                <h1>Give Your Workout<br>A new Style!</h1>
-                <p>Success isn't always about greatness.It's about consistency.Consistant<br> hard work gain
-                    success.Greatness will come.</p>
-                <a href="#">explore now<i class="fas fa-arrow-right"></i></a>
+                <h3>best staff</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus
+                    unde?</p>
+                <a href="#reservation" class="btn">make a reservation</a>
             </div>
-            <div class="pic">
-                <img src="images\images/image1.png" alt="">
-            <!-- </div> -->
+        </div>
+
+        <div class="row revers">
+            <div class="image">
+                <img src="images/about-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>best foods</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus
+                    unde?</p>
+                <a href="#contact" class="btn">contact us</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>swimming pool</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus
+                    unde?</p>
+                <a href="#availability" class="btn">check availability</a>
+            </div>
         </div>
 
     </section>
 
-    <section class="collection">
+    <!-- About section ends here -->
 
-        <h2 class="heading">Our Collection<br><span>--------------</span></h2>
+    <!-- services section starts -->
 
+    <section class="services">
 
-        <div class="grid-box">
+        <div class="box-container">
 
             <div class="box">
-                <img src="images\images/category-1.jpg" alt="">
+                <img src="images/icon-1.png" alt="">
+                <h3>food & drinks</h3>
+                <p>Lorem10</p>
             </div>
 
             <div class="box">
-                <img src="images\images/category-2.jpg" alt="">
+                <img src="images/icon-2.png" alt="">
+                <h3>outdoor dining</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, at.</p>
             </div>
 
             <div class="box">
-                <img src="images\images/category-3.jpg" alt="">
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="feature">
-
-        <h2 class="heading">Featured Product<br><span>--------------</span></h2>
-
-        <div class="grid-container">
-
-            <div class="box">
-                <img src="images\images/product-1.jpg" alt="">
-                <p>Red Printed T-Shirt</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-                <span>$50.00</span>
+                <img src="images/icon-3.png" alt="">
+                <h3>beach view</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eius?</p>
             </div>
 
             <div class="box">
-                <img src="images\images/product-2.jpg" alt="">
-                <p>Red Printed T-Shirt</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-                <span>$50.00</span>
+                <img src="images/icon-4.png" alt="">
+                <h3>decoration</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, totam?</p>
             </div>
 
-
             <div class="box">
-                <img src="images\images/product-3.jpg" alt="">
-                <p>Red Printed T-Shirt</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-                <span>$50.00</span>
+                <img src="images/icon-5.png" alt="">
+                <h3>swimming pool</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, ipsam!</p>
             </div>
 
-
             <div class="box">
-                <img src="images\images/product-4.jpg" alt="">
-                <p>Red Printed T-Shirt</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-                <span>$50.00</span>
+                <img src="images/icon-6.png" alt="">
+                <h3>resort beach</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, excepturi.</p>
             </div>
 
 
@@ -137,286 +238,273 @@
 
     </section>
 
-    <section class="product">
-
-        <h2 class="heading">Exclusive Product<br><span>--------------</span></h2>
-
-        <div class="grid-boxx">
+    <!-- services section ends -->
 
 
+
+    <!-- reservation section starts -->
+
+    <section class="reservation" id="reservation">
+
+        <form action="" method="post">
+            <h3>make a reservation</h3>
+            <div class="flex">
                 <div class="box">
-                    <img src="images\images/product-5.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
+                    <p>check in <span>*</span></p>
+                    <input type="date" name="check_in" class="input" required>
                 </div>
-
                 <div class="box">
-                    <img src="images\images/product-6.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
+                    <p>check out <span>*</span></p>
+                    <input type="date" name="check_out" class="input" required>
                 </div>
-
                 <div class="box">
-                    <img src="images\images/product-7.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
+                    <p>adults <span>*</span></p>
+                    <select name="adults" class="input" required>
+                        <option value="1">1 adult</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                        <option value="4">4 adults</option>
+                        <option value="5">5 adults</option>
+                        <option value="6">6 adults</option>
+                    </select>
                 </div>
-
                 <div class="box">
-                    <img src="images\images/product-8.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
+                    <p>childs <span>*</span></p>
+                    <select name="childs" class="input" required>
+                        <option value="-">0 child</option>
+                        <option value="1">1 child</option>
+                        <option value="2">2 childs</option>
+                        <option value="3">3 childs</option>
+                        <option value="4">4 childs</option>
+                        <option value="5">5 childs</option>
+                        <option value="6">6 childs</option>
+                    </select>
                 </div>
-
                 <div class="box">
-                    <img src="images\images/product-9.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
+                    <p>rooms <span>*</span></p>
+                    <select name="rooms" class="input" required>
+                        <option value="1">1 room</option>
+                        <option value="2">2 rooms</option>
+                        <option value="3">3 rooms</option>
+                        <option value="4">4 rooms</option>
+                        <option value="5">5 rooms</option>
+                        <option value="6">6 rooms</option>
+                    </select>
                 </div>
-
-                <div class="box">
-                    <img src="images\images/product-10.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
-                </div>
-
-                <div class="box">
-                    <img src="images\images/product-11.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
-                </div>
-
-                <div class="box">
-                    <img src="images\images/product-12.jpg" alt="">
-                    <p>Red Printed T-Shirt</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <span>$50.00</span>
-                </div>
-
-
-        </div>
-
+            </div>
+            <input type="submit" value="check availability" name="check" class="btn">
+        </form>
 
     </section>
 
-    <section class="watch">
+    <!-- reservation section ends -->
 
-        <div class="flex-box">
 
-            <div class="left-box">
-                <div class="img">
-                    <img src="images\images/exclusive.png" alt="">
-                </div>
+    <!-- gallery section starts here -->
+
+
+    <section class="gallery" id="gallery">
+
+        <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+                <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+                <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-6.webp" class="swiper-slide" alt="">
             </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-            <div class="right-box">
-                <div class="text">
-                    <span>exclusivly available on RedStore</span>
-                    <h3>Smart Band 4</h3>
-                    <p>The Mi Smart Band features a 39.9% larger(than Mi Band 3) AMOLED color<br>full-touch display with adjustable brightness.so every thing clear as we can.</p>
-                    <a href="#">Buy Now<i class="fas fa-arrow-right"></i></a>
+    <!-- gallery section ends here -->
 
+
+    <!-- contact section starts here -->
+
+
+    <section class="contact" id="contact">
+
+        <div class="row">
+
+            <form action="" method="post">
+                <h3>ask us questions</h3>
+                <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+                <input type="email" name="email" required maxlength="50" placeholder="enter your e-mail" class="box">
+                <input type="number" name="number" required maxlength="10" min="0" max="9999999999"placeholder="enter your number" class="box">
+                <textarea name="msg" class="box" required maxlength="1000" cols="30" placeholder="enter your message" rows="10"></textarea>
+                <input type="submit" value="send message" name="send" class="btn">
+            </form>
+
+            <div class="faq">
+                <h3 class="title">frequently asked questions</h3>
+                <div class="box active">
+                   <h3>how to cancel?</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.</p>
                 </div>
-            </div>
+                <div class="box">
+                   <h3>is there any vacancy?</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+                </div>
+                <div class="box">
+                   <h3>what are payment methods?</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+                </div>
+                <div class="box">
+                   <h3>how to claim coupons codes?</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+                </div>
+                <div class="box">
+                   <h3>what are the age requirements?</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+                </div>
+             </div>
+       
 
         </div>
 
     </section>
 
-    <section class="review">
 
-        <h2 class="heading">Our Customers<br><span>--------------</span></h2>
+    <!-- contact section ends here -->
 
 
-        <div class="grid-contt">
+    <!-- reviews section starts -->
 
-            <div class="box">
-                <i class="fas fa-quote-left"></i>
-                <p>Lorem, ipsum dolor sit amet consert adipisicing elit. Provident quibusdam quisquam cumque neque accudrgtfb adipisci sint ea similique delectusxy</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
+    <section class="reviews" id="reviews">
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="images/pic-1.png" alt="">
+                    <h3>jhon deo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam aliquid odit non harum nostrum. Placeat.</p>
                 </div>
-                <img src="images\images/user-1.png" alt="">
-                <span>Sean Parkar</span>
-
-            </div>
-
-            <div class="box">
-                <i class="fas fa-quote-left"></i>
-                <p>Lorem, ipsum dolor sit amet consert adipisicing elit. Provident quibusdam quisquam cumque neque accudrgtfb adipisci sint ea similique delectusxy</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
+                <div class="swiper-slide box">
+                    <img src="images/pic-2.png" alt="">
+                    <h3>jhon deo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam aliquid odit non harum nostrum. Placeat.</p>
                 </div>
-                <img src="images\images/user-1.png" alt="">
-                <span>Sean Parkar</span>
-
-            </div>
-
-            <div class="box">
-                <i class="fas fa-quote-left"></i>
-                <p>Lorem, ipsum dolor sit amet consert adipisicing elit. Provident quibusdam quisquam cumque neque accudrgtfb adipisci sint ea similique delectusxy</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
+                <div class="swiper-slide box">
+                    <img src="images/pic-3.png" alt="">
+                    <h3>jhon deo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam aliquid odit non harum nostrum. Placeat.</p>
                 </div>
-                <img src="images\images/user-1.png" alt="">
-                <span>Sean Parkar</span>
-
+                <div class="swiper-slide box">
+                    <img src="images/pic-4.png" alt="">
+                    <h3>jhon deo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam aliquid odit non harum nostrum. Placeat.</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/pic-5.png" alt="">
+                    <h3>jhon deo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam aliquid odit non harum nostrum. Placeat.</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/pic-6.png" alt="">
+                    <h3>jhon deo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam aliquid odit non harum nostrum. Placeat.</p>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
 
         </div>
 
     </section>
 
-    <div class="c-logo">
+    <!-- footer section starts here -->
+   
+    <section class="footer">
 
-        <h2 class="heading">Our Parteners<br><span>--------------</span></h2>
-
-
-        <div class="grid-boxxe">
+        <div class="box-container">
 
             <div class="box">
-                <img src="images\images/logo-coca-cola.png" alt="">
+                <a href="tel:1234567890"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="tel:1112223333"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="mailto:sharifkhan@gamil.com"><i class="fas fa-envelope"></i>sharifkhan@gamil.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Gonda,india - 271001</a>
             </div>
 
             <div class="box">
-                <img src="images\images/logo-godrej.png" alt="">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#reservation">reservation</a>
+                <a href="#gallery">gallery</a>
+                <a href="#contact">contact</a>
+                <a href="#reviews">reviews</a>
             </div>
 
             <div class="box">
-                <img src="images\images/logo-oppo.png" alt="">
-            </div>
-
-            <div class="box">
-                <img src="images\images/logo-paypal.png" alt="">
-            </div>
-
-            <div class="box">
-                <img src="images\images/logo-philips.png" alt="">
+                <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+                <a href="#">twitter <i class="fab fa-twitter"></i></a>
+                <a href="#">instagram <i class="fab fa-instagram"></i></a>
+                <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
             </div>
 
         </div>
 
-    </div>
-
-    <footer class="last">
-
-        <div class="flexx">
-
-            <div class="box">
-
-                <h6>Download our app</h6>
-
-                <p>Download app for android and iphone mobile phone</p>
-
-                <div class="mini">
-                    <img src="images\images/play-store.png" alt="">
-                    <img src="images\images/app-store.png" alt="">
-                </div>
-
-            </div>
-
-            <div class="box-1">
-
-                <img src="images\images/logo.png" alt="">
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis velit neque itaque?</p>
+        <div class="credit">&copy; copyright @ 2022 by mr. sharif khan | all right reserve</div>
 
 
-            </div>
 
-            <div class="box">
+    </section>
 
-                <h6>Useful links</h6>
 
-                <p>Coupons</p>
-                <p>Big Post</p>
-                <p>Return Policy</p>
-                <p>Join Affliate</p>
 
-            </div>
 
-            <div class="box">
 
-                <h6>Follow Us</h6>
 
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>Instagram</p>
-                <p>Youtube</p>
 
-            </div>
 
-        </div>
 
-    </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
 
 
 </body>
